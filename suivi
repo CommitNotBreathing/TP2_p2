@@ -1,0 +1,16 @@
+Separation des taches:
+
+Yassine :
+-Commande incorrect: 
+	(Le nom du client ou le plat n’existe pas,
+	Le format d’un client, d’un plat ou d’une commande n’est pas respecté,
+	Des chiffres sont erronés (prix du plat, quantité de plats commandés))
+
+	
+
+
+Pascal :
+	-Afficher et editer dans un fichier la facture  (Facture-du-date-heure.txt)
+	-Afficher les commandes incorrectes
+	-Facture 0$ = pas afficher
+	-Taxes (à raison de TPS 5% et TVQ 10%)
