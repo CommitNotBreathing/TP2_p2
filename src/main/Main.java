@@ -25,6 +25,7 @@ public class Main {
 			Plat.CreatePlats(info);
 			Commande.CreateCommande(info);
 			Facture.PrintFacture();
+			Facture.PrintFactureTxt();
 			
 		} catch (Exception e) {
 			System.out.println("Le fichier ne respecte pas le format demandé !");
