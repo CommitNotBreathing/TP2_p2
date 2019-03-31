@@ -36,7 +36,7 @@ public class Facture {
 					double prix = 0;
 					for (Commande commande : client.listeCommande) {
 						prix += commande.getPrix(commande.getPlat()) * commande.getnbArticle();
-						prix += prix*0.15;
+						prix = Taxe(prix);
 						
 					}
 		
@@ -48,10 +48,6 @@ public class Facture {
 	
 	public static void PrintFactureTxt() throws FileNotFoundException, UnsupportedEncodingException {
 		
-		
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm'.txt'");
-		LocalDateTime dateTemps = LocalDateTime.now();
-		String datefinal = dateTemps.format(formatter);
 		
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH_mm");
 		String time = new String(java.time.LocalTime.now().format(dtf));
@@ -67,13 +63,21 @@ public class Facture {
 					double prix = 0;
 					for (Commande commande : client.listeCommande) {
 						prix += commande.getPrix(commande.getPlat()) * commande.getnbArticle();
-						prix += prix*0.15;
+						prix = Taxe(prix);
 					}
 					if(prix!=0) {
 					writer.println(client.getNom()+" "+format.format(prix)+"$");
 					}
 				}
 		writer.close();
+	}
+	
+	public static double Taxe(double prix) {
+		
+		prix += prix*0.15;
+		
+		return prix;
+		
 	}
 	
 }
