@@ -5,3 +5,4 @@ tests unitaires sur:
 -prix des plats
 -verifier si les taxes sont bonnes
 -nombre d'article
+   
