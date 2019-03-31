@@ -46,7 +46,7 @@ public class Commande {
 	}
 	
 	
-	public static void CreateCommande(ArrayList<String> info) {
+	public static ArrayList<Commande> CreateCommande(ArrayList<String> info) {
 		
 		int debut = info.indexOf("Commandes :");
 		int fin = info.indexOf("Fin");
@@ -58,6 +58,9 @@ public class Commande {
 			listeCommande.add(temp);
 		}
 		Client.Client_Commande(listeCommande);
-	Facture.listeCommande=listeCommande;
+	   Facture.listeCommande=listeCommande;
+	   
+	   return listeCommande;
+
 	}
 }

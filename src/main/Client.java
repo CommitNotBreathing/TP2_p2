@@ -19,7 +19,7 @@ public class Client {
 		return this.nom;
 	}
 	
-	public static void CreateClients(ArrayList<String> info) {
+	public static ArrayList<Client> CreateClients(ArrayList<String> info) {
 	
 		int debut = info.indexOf("Clients :");
 		int fin = info.indexOf("Plats :");				
@@ -30,9 +30,9 @@ public class Client {
 			listeClient.add(new Client(info.get(i)));
 		}
 		
-		Facture.listeClient=listeClient;
-	
-		
+		 Facture.listeClient=listeClient;
+
+		return listeClient;
 	}
 	
 	public static void Client_Commande(ArrayList<Commande> commandes) {
