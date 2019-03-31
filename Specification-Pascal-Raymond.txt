@@ -4,3 +4,4 @@ Spécification Pascal Raymond:
 -Date dans la facture
 -Fichier respect le format
 -Lecture du fichier Style est fait
+-Test les facture mauvaise

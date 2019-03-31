@@ -24,7 +24,7 @@ public class Plat {
 		return this.prix;
 	}
 		
-	public static void CreatePlats(ArrayList<String> info) {
+	public static ArrayList<Plat> CreatePlats(ArrayList<String> info) {
 		
 		int debut = info.indexOf("Plats :");
 		int fin = info.indexOf("Commandes :");
@@ -34,7 +34,8 @@ public class Plat {
 			Plat temp = new Plat(lignes[0], Double.parseDouble(lignes[1]));
 			listePlat.add(temp);
 		}
-		Facture.listePlat=listePlat;
+		  Facture.listePlat=listePlat;
+		  return listePlat;
 	}
 	
 
