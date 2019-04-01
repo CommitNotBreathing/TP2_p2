@@ -29,7 +29,7 @@ public class Commande {
 		return this.nbArticle;
 	}
 	
-	public double getPrix(String nom) {
+	public static double getPrix(String nom) {
 		double prix = 0;
 		switch (nom) {
 		case "Poutine":

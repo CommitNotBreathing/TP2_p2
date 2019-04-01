@@ -104,7 +104,7 @@ public class Facture {
 		
 		return writer;
 	}
-	
+	//les taxes sont arrondie a la baisse
 	public static double Taxe(double prix) {
 		
 		prix += prix*0.15;
