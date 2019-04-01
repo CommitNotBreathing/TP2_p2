@@ -25,7 +25,7 @@ public class Main {
 			Plat.CreatePlats(info);
 			Commande.CreateCommande(info);
 			if (info.isEmpty()) {
-				System.out.println("Le fichier ne respecte pas le format demandé !");	
+				System.out.println("Le fichier est vide, pas de facture a traité");	
 			}else {
 			Facture.PrintFacture();
 			Facture.PrintFactureTxt();

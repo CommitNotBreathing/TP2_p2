@@ -100,6 +100,7 @@ public class TestUnitaire {
 		assertEquals(total, 18.1125);
 	}
 	
+
 	
 	
 
