@@ -45,7 +45,7 @@ public class Commande {
 		return prix;
 	}
 	
-	
+	 
 	public static ArrayList<Commande> CreateCommande(ArrayList<String> info) {
 		
 		int debut = info.indexOf("Commandes :");

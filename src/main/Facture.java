@@ -47,7 +47,7 @@ public class Facture {
 		
 				for (Client client : listeClient) {
 					double prix = 0;
-					for (Commande commande : client.listeCommande) {
+	 				for (Commande commande : client.listeCommande) {
 						prix += commande.getPrix(commande.getPlat()) * commande.getnbArticle();
 						prix = Taxe(prix);
 						
