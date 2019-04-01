@@ -1,0 +1,6 @@
+Spécification Pascal Raymond:
+
+-Nombre de clients, plats , commandes (donc pas null) 
+-Date dans la facture
+-Fichier respect le format
+-Lecture du fichier Style est fait
